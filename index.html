@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="node_modules/@pnotify/core/dist/PNotify.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Вгадай клавішу!</h1>
+      <div id="status">Гра триває</div>
+      <div id="key-display">Натисни клавішу: <span id="key">-</span></div>
+      <button id="new-game-btn">Нова гра</button>
+    </div>
+    <canvas id="sales-chart"></canvas>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script
+      type="text/javascript"
+      src="node_modules/@pnotify/core/dist/PNotify.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="node_modules/@pnotify/mobile/dist/PNotifyMobile.js"
+    ></script>
+  </body>
+</html>
